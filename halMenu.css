@@ -1,0 +1,32 @@
+ table,tr,td{
+    background-color: rgba(256, 256, 256, 0.3) ;
+    font-family: Courier;
+    font-size: 20px;
+    color: black;
+    padding: 5px;
+    border-collapse: collapse;
+ }
+#header-background{
+    width: 100%;
+    height: 120px;
+    background: url('header.jpg');
+    }
+.header{
+    background: url('header.jpg');
+    }
+ .posisi{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 0;
+ }
+ body{
+    background-image: url('LatarBelakang.jpg');
+    background-repeat: no-repeat;
+     background-size: 1900px auto;
+ }
