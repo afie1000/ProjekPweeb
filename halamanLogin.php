@@ -9,7 +9,9 @@
  <?php
 	if(isset($_GET['pesan'])){
 		if($_GET['pesan']=="gagal"){
-			echo "<div class='alert'>Username/Password salah !</div>";
+			echo '<script language="javascript">';
+			echo 'alert("Username atau Password Salah")';
+			echo '</script>';
 		}
 	}
 ?>
@@ -40,7 +42,7 @@
  <td><b>Belum Punya ID ?</b></td>
  <td></td>
  <td>
- 	<a href="">Daftar Akun</a>
+ 	<a href="halDaftar.php">Daftar Akun</a>
  </td>
  </tr>
   <tr>

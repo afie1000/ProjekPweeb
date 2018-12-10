@@ -33,7 +33,7 @@ if($cek > 0){
 		$_SESSION['username'] = $username;
 		$_SESSION['level'] = "pengguna";
 		// alihkan ke halaman dashboard pegawai
-		header("location:halaman_pegawai.php");
+		header("location:halaman_pengguna.php");
  
 	// cek jika user login sebagai pengurus
 	}else if($data['level']=="pengurus"){
