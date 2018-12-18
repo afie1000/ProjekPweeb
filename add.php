@@ -3,14 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tambah Biodata</title>
+    <title>Tambah Lagu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="halLogin.css" />
     <script src="main.js"></script>
 </head>
 <body>
-    <a href="halaman_pengurus.php">Kembali ke laman utama</a><br><br>
-
+<?php session_start() ?>
+  <?php if($_SESSION['level']=="pengurus"){ ?>
+    <a href="halaman_pengurus.php?pilih=1&song=1">Kembali ke laman utama</a><br><br>
+  <?php } else { ?> <a href="halaman_admin.php?pilih=1&song=1">Kembali ke Laman Utama</a><br><br> <?php } ?>
     <form action="add.php" method="post" name="form1" class="posisi" style="width: 300px; height: 300px; background-color: rgba(256, 256, 256, 0.7) ;">
         <br> &nbsp;&nbsp;&nbsp;&nbsp;
         <select name="jenis">
@@ -18,15 +20,15 @@
            <option value="Idolm@ster">Idolm@ster</option>
         </select> <br><br>
         &nbsp;&nbsp;&nbsp;&nbsp;Artis :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        <input type="text" name="artis"><br><br>
+        <input type="text" name="artis" required><br><br>
         &nbsp;&nbsp;&nbsp;&nbsp;Judul Lagu : 
-        <input type="text" name="judul"><br><br>
+        <input type="text" name="judul" required><br><br>
         &nbsp;&nbsp;&nbsp;&nbsp;Album : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="text" name="album"><br><br>
+        <input type="text" name="album" required><br><br>
         &nbsp;&nbsp;&nbsp;&nbsp;Type :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="text" name="type"><br><br>
+        <input type="text" name="type" required><br><br>
         &nbsp;&nbsp;&nbsp;&nbsp;Link Play :
-        &nbsp;&nbsp;<input type="text" name="link"> <br><br>
+        &nbsp;&nbsp;<input type="text" name="link" require> <br><br>
 
         <input type="hidden" name="favorit" value="0w">
 

@@ -60,9 +60,11 @@ $result = mysqli_query($mysqli, "SELECT * from lagu");
         echo "<td>".$user_data['artis']."</td>";
         echo "<td>".$user_data['type']."</td>";
         echo "<td>".$user_data['album']."</td>";
-        echo "<td><a href='edit.php?id=$user_data[id]'>Edit</a> | <a href='delete.php?id=$user_data[id]'>Delete</a></td></tr>";
+        echo "<td><a href='edit2.php?id=$user_data[id]'>Edit</a> | <a href='delete2.php?id=$user_data[id]'>Delete</a></td></tr>";
     }
     ?>
     </table>
+    <br><br>
+    <button onclick="location.href='logout.php'" type="button">LOGOUT</button>
 </body>
 </html>

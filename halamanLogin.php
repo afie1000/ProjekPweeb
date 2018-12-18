@@ -6,7 +6,9 @@
  </head>
  <body>
  
+ 
  <?php
+
 	if(isset($_GET['pesan'])){
 		if($_GET['pesan']=="gagal"){
 			echo '<script language="javascript">';
@@ -18,7 +20,7 @@
 
  	<header></header>
  <form action="cek_login.php" style="width: 1000px"class="posisi" method="post";>
- <table style="width: 1000px; height: 600px ;">
+ <table style="width: 1000px; height: 450px ;">
  <tr>
  <td rowspan="7" >
  <img src="niconii.png" width="450px" height="500px"/>
@@ -28,14 +30,14 @@
  <td><b>User ID</b></td>
  <td>:</td>
  <td>
- 	<input type="text" name="username" class="form_login">
+ 	<input type="text" name="username" class="form_login" required>
  </td>
  </tr>
  <tr>
  <td><b>Password</b></td>
  <td>:</td>
  <td>
- 	<input type="Password" name="password" class="form_login">
+ 	<input type="Password" name="password" class="form_login" required>
  </td>
  </tr>
  <tr>
